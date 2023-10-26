@@ -1,0 +1,221 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      @media (min-width: 992px) {
+        .rounded-lg-3 { border-radius: .3rem; }
+      }
+      .hidden{
+        display: none;
+      }
+      .dlh{
+        background-color: #2F7C31;
+        color: #fff;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="template.html" class="text-white" style="text-decoration: none;">Halaman Utama</a></li>
+              <li><a href="carbon.html" class="text-white" style="text-decoration: none;">Carbon Offsets</a></li>
+              <li><a href="peta.html" class="text-white" style="text-decoration: none;">Peta Tambang</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark shadow-sm" style="background-color: #2F7C31;">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>SimpleBang</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+      <div class="container my-5" >
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Bank Bibit Pohon</h1>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <form action="peta-detail.html">
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Pilih Gudang</label>
+              <select class="form-control" name="tambang">
+                  <option value="">Semua Gudang</option>
+                  <option value="">Gudang Kecamatan Kepanjen</option>
+              </select>
+              <div id="emailHelp" class="form-text">Pilih lahan bekas tambang.</div>
+            </div>
+
+            <button type="submit" class="btn dlh">Lihat Informasi</button>
+          </form>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container my-5" >
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+            <h3 class="display-7  lh-1 mb-3">Daftar bibit gudang X</h3>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bibit Durian</h5>
+                  <p class="card-text">Tersedia: 100 bibit </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bibit Durian</h5>
+                  <p class="card-text">Tersedia: 100 bibit </p>
+                </div>
+              </div>
+
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bibit Durian</h5>
+                  <p class="card-text">Tersedia: 100 bibit </p>
+                </div>
+              </div>
+              <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title">Bibit Durian</h5>
+                  <p class="card-text">Tersedia: 100 bibit </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="container my-5" >
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+            <h3 class="display-7  lh-1 mb-3">Mutasi bibit gudang X</h3>
+
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Asal</th>
+                    <th scope="col">Tipe</th>
+                    <th scope="col">Jenis Bibit</th>
+                    <th scope="col">Gudang</th>
+                    <th scope="col">Jumlah</th>
+                    <th scope="col">Tanggal</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                    <td>@mdo</td>
+                  </tr>
+
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <script type="text/javascript">
+
+
+
+    </script>
+  </body>
+</html>

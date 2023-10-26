@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+        <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+        <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      @media (min-width: 992px) {
+        .rounded-lg-3 { border-radius: .3rem; }
+      }
+      .hidden{
+        display: none;
+      }
+      .dlh{
+        background-color: #2F7C31;
+        color: #fff;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+<header>
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="template.html" class="text-white" style="text-decoration: none;">Halaman Utama</a></li>
+              <li><a href="carbon.html" class="text-white" style="text-decoration: none;">Carbon Offsets</a></li>
+              <li><a href="peta.html" class="text-white" style="text-decoration: none;">Peta Tambang</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark shadow-sm" style="background-color: #2F7C31;">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>SimpleBang</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div id="map-all" style="height: 500px;">
+  </div>
+
+      <div class="container my-5">
+        <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+          <div class="col-lg-12 p-3 p-lg-5 pt-lg-3">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Tambang PT. Antem Anteman</h1>
+            <nav>
+              <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Informasi Tambang</button>
+                <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Informasi Pemilik</button>
+                <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Penanaman</button>
+                <button class="nav-link" id="nav-disabled-tab" data-bs-toggle="tab" data-bs-target="#nav-disabled" type="button" role="tab" aria-controls="nav-disabled" aria-selected="false">Galeri</button>
+              </div>
+            </nav>
+            <div class="tab-content" id="nav-tabContent">
+              <br>
+              <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab" tabindex="0">
+                <br>
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Jenis Tambang</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Alamat</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+
+
+                </form>
+              </div>
+              <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab" tabindex="0">...</div>
+              <div class="tab-pane fade" id="nav-disabled" role="tabpanel" aria-labelledby="nav-disabled-tab" tabindex="0">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bibit Durian</h5>
+                      <p class="card-text">Tersedia: 100 bibit </p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bibit Durian</h5>
+                      <p class="card-text">Tersedia: 100 bibit </p>
+                    </div>
+                  </div>
+
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bibit Durian</h5>
+                      <p class="card-text">Tersedia: 100 bibit </p>
+                    </div>
+                  </div>
+                  <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://localhost/img/logo_bibit/1671030144.jpg" alt="Card image cap">
+                    <div class="card-body">
+                      <h5 class="card-title">Bibit Durian</h5>
+                      <p class="card-text">Tersedia: 100 bibit </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start"><a href="peta.html"><button type="button" class="btn dlh">Kembali </button></a></div>
+          </div>
+        </div>
+      </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox.js/v3.3.1/mapbox.js'></script>
+    <script type="text/javascript">
+
+          mapboxgl.accessToken = 'pk.eyJ1IjoicmFjaG1hdGFiZHVsIiwiYSI6ImNsYjh6djJ2cTBwc20zcnA0eDZxd2lndjUifQ.rldZj3DRaGatn9ymgDU31g';
+          var  map = new mapboxgl.Map({
+                      container: 'map-all', // container ID
+                      style: 'mapbox://styles/mapbox/streets-v11', // style URL
+                      center: ["112.5716", "-8.1326099999999"], // starting position [lng, lat]
+                      zoom: 10 // starting zoom
+                      });
+
+
+
+
+    </script>
+  </body>
+</html>

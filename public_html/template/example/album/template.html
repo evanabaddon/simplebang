@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.84.0">
+    <title>Album example · Bootstrap v5.0</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+
+
+    <!-- Bootstrap core CSS -->
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      @media (min-width: 992px) {
+        .rounded-lg-3 { border-radius: .3rem; }
+      }
+      .hidden{
+        display: none;
+      }
+      .dlh{
+        background-color: #2F7C31;
+        color: #fff;
+      }
+
+    </style>
+
+
+  </head>
+  <body>
+
+<header >
+  <div class="collapse bg-dark" id="navbarHeader">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-8 col-md-7 py-4">
+          <h4 class="text-white">About</h4>
+          <p class="text-muted">Add some information about the album below, the author, or any other background context. Make it a few sentences long so folks can pick up some informative tidbits. Then, link them off to some social networking sites or contact information.</p>
+        </div>
+        <div class="col-sm-4 offset-md-1 py-4">
+          <h4 class="text-white">Menu</h4>
+          <ul class="list-unstyled">
+            <li><a href="template.html" class="text-white" style="text-decoration: none;">Halaman Utama</a></li>
+              <li><a href="carbon.html" class="text-white" style="text-decoration: none;">Carbon Offsets</a></li>
+              <li><a href="peta.html" class="text-white" style="text-decoration: none;">Peta Tambang</a></li>
+              <li><a href="gudang.html" class="text-white" style="text-decoration: none;">Gudang Bibit</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="navbar navbar-dark shadow-sm" style="background-color: #2F7C31;">
+    <div class="container">
+      <a href="#" class="navbar-brand d-flex align-items-center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+        <strong>SimpleBang</strong>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="container my-5" >
+    <div class="row p-4 pb-0 pe-lg-0 pt-lg-5 align-items-center rounded-3 border shadow-lg">
+      <div class="col-lg-7 p-3 p-lg-5 pt-lg-3">
+        <h1 class="display-5 fw-bold lh-1 mb-3">Simplebang</h1>
+        <h3 class="display-7 lh-1 mb-3">Sistem Informasi Pemulihan Lahan Bekas Tambang</h3>
+        <ul class="list">
+          <li>Berbasis Web sehingga ringan dan mudah diakses (menggunakan mobile phone), tanpa perlu mendownload di Play Store / Apps Store</li>
+          <li>Mampu memberikan informasi secara realtime dan terintegrasi</li>
+          <li>Memiliki keamanan data yang cukup memadai  dalam menjaga kerahasiaan informasi</li>
+          <li>Dilengkapi fitur geo tagging, data report management dan digital mapping</li>
+        </ul>
+        <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+          <a href="#latar-belakang"><button type="button" class="btn btn-outline-primary btn-lg px-4">Selengkapnya</button></a>
+        </div>
+      </div>
+      <div class="col-lg-4 offset-lg-1 p-0 overflow-hidden shadow-lg">
+          <img class="rounded-lg-3" src="simpelbang.png" alt="" width="720">
+      </div>
+    </div>
+  </div>
+  <section class="py-5 container" id="latar-belakang" style="height: 100vh !important;">
+    <div class="container col-xxl-12 px-4 py-5 " style="height: 50% !important;">
+      <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+        <div class="col-10 col-sm-8 col-lg-6">
+          <img src="https://www.digi.com/getattachment/blog/post/sustainable-city/gettyimages-544342844-1280x720.jpg?lang=en-us&width=1280&height=720&ext=.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h1 class="display-5 fw-bold lh-1 mb-3">Latar Belakang</h1>
+          <p class="lead">Dalam rangka menuju <b>ASEAN Environmentally Sustainable City Award</b> Tahun 2024, di Tahun 2022 Pemerintah Kabupaten Malang melalui Dinas Lingkungan Hidup meluncurkan program Kabupaten Malang Bersih (Clean City) dengan mentargetkan keberhasilan dalam pengelolaan lingkungan hidup (Clean land, Clean Air dan Clean Water)</p>
+          <p class="lead mb-4">Salah satu indikator keberhasilan dalam pengelolaan lingkungan hidup adalah terpenuhinya target Indeks Kualitas Lingkungan Hidup Daerah (IKLHD) yang diwakili oleh Indeks Kualitas Udara (IKU), Indeks Kualitas Air (IKA), dan Indeks Kualitas Lahan (IKL)</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+            <a href="#profil"><button type="button" class="btn btn-outline-primary btn-lg px-4">Selengkapnya</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="py-5 text-center container" id="profil" style="height: 100vh !important;">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">Indeks Kualitas Lahan</h1>
+      <div class="col-lg-8 mx-auto">
+        <p class="lead mb-3">Dari hasil Capaian IKLH Tahun 2022, walaupun sudah memenuhi target namun nilai Indeks Kualitas Lahan (IKL) masih di angka yang cukup rendah bahkan mengalami penurunan dari tahun 2022 (47,52 ke 46,88). Oleh karena itu, perlu adanya upaya yang lebih signifikan di tahun 2023 dalam meningkatkan IKL</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <a href="#lat"><button type="button" class="btn btn-outline-primary btn-lg px-4">Selanjutnya : LAT</button></a>
+        </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="https://img.freepik.com/free-vector/green-city-concept-paper-style_23-2148439624.jpg?w=2000" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="py-5 text-center container" id="lat" style="height: 100vh !important;">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold">LAHAN AKSES TERBUKA (LAT)</h1>
+      <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4">Salah satu komponen yang dapat dimaksimalkan dalam memperbaiki indeks kualitas lahan adalah Lahan Akses Terbuka (LAT) atau yang sering disebut lahan bekas tambang illegal. </p>
+        <p class="lead mb-4">LAT sangat berpotensi menjadi lahan kritis dikarenakan tidak adanya upaya preservasi Top Soil lahan dan reklamasi lahan bekas tambang seperti yang dilakukan oleh pertambangan resmi yang dikelola oleh pemilik ijin tambang LAT. Jika tidak ditangani dengan baik
+akan sangat berpotensi terjadi Erosi.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="#tantangan"><button type="button" class="btn btn-outline-primary btn-lg px-4">Selanjutnya : Tantangan Pemanfaatan LAT</button></a>
+      </div>
+      </div>
+      <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+          <img src="https://img.freepik.com/premium-vector/green-eco-city-banner_174191-51.jpg?w=1280" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <section class="py-5 container" id="tantangan" style="height: 100vh !important;">
+    <div class="px-4 pt-5 my-5 border-bottom">
+      <h1 class="display-4 fw-bold text-center">Tantangan Pemanfaatan LAT</h1>
+      <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4"></p>
+        <div class="row row-cols-12 row-cols-md-12 mb-3 ">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm ">
+
+              <div class="card-body">
+
+                <ul class="list mt-3 mb-4">
+                  <li>Belum ada pemetaan secara komprehensif terkait persebaran LAT</li>
+                  <li>Tingkat keberhasilan reboisasi pada LAT cukup rendah</li>
+                  <li>Fokus hanya pada penanaman tetapi tidak ada rencana yang matang dalam pengelolaan pasca penanaman</li>
+                  <li>Keterbatasan anggaran pemerintah untuk memaksimalkan program reboisasi, khususnya untuk memenuhi kriteria LAT</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <h1 class="display-4 fw-bold text-center">Inovasi DLH</h1>
+      <div class="col-lg-8 mx-auto">
+        <p class="lead mb-4"></p>
+        <div class="row row-cols-12 row-cols-md-12 mb-3 ">
+          <div class="col">
+            <div class="card mb-4 rounded-3 shadow-sm dlh">
+
+              <div class="card-body">
+
+                <ul class="list mt-3 mb-4">
+                  <li>Untuk memudahkan update data lokasi Bekas Tambang, DLH membuat Peta Digital berdasarkan dokumen DATA BASE DAN PEMETAAN LAHAN KRITIS BEKAS TAMBANG DI KABUPATEN MALANG TAHUN 2022  </li>
+                  <li>Untuk memudahkan pengelolaan program DLH membuat aplikasi Online berbasis web, yang sekaligus juga dapat memberikan informasi kepada masyarakat luas terkait progress dan akuntabilitas program</li>
+                  <li>Untuk memaksimalkan pendanaan program, DLH akan berkolaborasi dengan pelaku usaha melalui Corporate Social Responsibility (CSR)</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
+    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
+  </div>
+</footer>
+
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  </body>
+</html>

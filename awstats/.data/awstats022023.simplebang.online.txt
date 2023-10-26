@@ -1,0 +1,283 @@
+AWSTATS DATA FILE 7.8 (build 20200416)
+# If you remove this file, all statistics for date 202302 will be lost/reset.
+# Last config file used to build this data file was /home/simpleba/domains/simplebang.online/awstats/.data/awstats.simplebang.online.conf.
+
+# Position (offset in bytes) in this file for beginning of each section for
+# direct I/O access. If you made changes somewhere in this file, you should
+# also remove completely the MAP section (AWStats will rewrite it at next
+# update).
+BEGIN_MAP 30
+POS_GENERAL 2112                
+POS_TIME 2785                
+POS_VISITOR 6470                
+POS_DAY 7083                
+POS_DOMAIN 3306                
+POS_LOGIN 3534                
+POS_ROBOT 3689                
+POS_WORMS 3990                
+POS_EMAILSENDER 4121                
+POS_EMAILRECEIVER 4264                
+POS_SESSION 7189                
+POS_SIDER 7346                
+POS_FILETYPES 4399                
+POS_DOWNLOADS 4603                
+POS_OS 4651                
+POS_BROWSER 4772                
+POS_SCREENSIZE 4955                
+POS_UNKNOWNREFERER 5029                
+POS_UNKNOWNREFERERBROWSER 5116                
+POS_ORIGIN 5198                
+POS_SEREFERRALS 5331                
+POS_PAGEREFS 5475                
+POS_SEARCHWORDS 5623                
+POS_KEYWORDS 5775                
+POS_MISC 2448                
+POS_ERRORS 5834                
+POS_CLUSTER 3390                
+POS_SIDER_403 5933                
+POS_SIDER_400 6015                
+POS_SIDER_404 6097                
+END_MAP
+
+# LastLine    = Date of last record processed - Last record line number in last log - Last record offset in last log - Last record signature value
+# FirstTime   = Date of first visit for history file
+# LastTime    = Date of last visit for history file
+# LastUpdate  = Date of last update - Nb of parsed records - Nb of parsed old records - Nb of parsed new records - Nb of parsed corrupted - Nb of parsed dropped
+# TotalVisits = Number of visits
+# TotalUnique = Number of unique visitors
+# MonthHostsKnown   = Number of hosts known
+# MonthHostsUnKnown = Number of hosts unknown
+BEGIN_GENERAL 8
+LastLine 20230428051741 1 0 14243486953091
+FirstTime 20230201001504
+LastTime 20230202040943
+LastUpdate 20230429032325 1 0 0 0 0
+TotalVisits 14                  
+TotalUnique 14                  
+MonthHostsKnown 0                   
+MonthHostsUnknown 14                  
+END_GENERAL
+
+# Misc ID - Pages - Hits - Bandwidth
+BEGIN_MISC 10
+QuickTimeSupport 0 0 0
+JavaEnabled 0 0 0
+JavascriptDisabled 0 0 0
+PDFSupport 0 0 0
+WindowsMediaPlayerSupport 0 0 0
+AddToFavourites 0 11 0
+RealPlayerSupport 0 0 0
+TotalMisc 0 0 0
+DirectorSupport 0 0 0
+FlashSupport 0 0 0
+END_MISC
+
+# Hour - Pages - Hits - Bandwidth - Not viewed Pages - Not viewed Hits - Not viewed Bandwidth
+BEGIN_TIME 24
+0 6 6 33874 0 5 2271
+1 0 0 0 0 0 0
+2 2 2 6629 1 3 6467
+3 0 0 0 0 0 0
+4 6 21 6043715 0 0 0
+5 0 0 0 0 0 0
+6 3 3 7752 14 18 71213
+7 0 0 0 0 0 0
+8 0 0 0 0 0 0
+9 0 0 0 0 0 0
+10 0 0 0 0 0 0
+11 0 0 0 0 0 0
+12 0 0 0 0 0 0
+13 1 1 5775 0 1 383
+14 0 0 0 0 0 0
+15 8 23 2485433 0 1 0
+16 0 0 0 0 0 0
+17 0 0 0 0 0 0
+18 0 0 0 0 0 0
+19 0 0 0 0 0 0
+20 0 0 0 0 0 0
+21 0 0 0 0 0 0
+22 0 0 0 0 3 5345
+23 0 0 0 0 0 0
+END_TIME
+
+# Domain - Pages - Hits - Bandwidth
+# The 10 first Pages must be first (order not required for others)
+BEGIN_DOMAIN 1
+ip 26 56 8583178
+END_DOMAIN
+
+# Cluster ID - Pages - Hits - Bandwidth
+BEGIN_CLUSTER 0
+END_CLUSTER
+
+# Login - Pages - Hits - Bandwidth - Last visit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_LOGIN 0
+END_LOGIN
+
+# Robot ID - Hits - Bandwidth - Last visit - Hits on robots.txt
+# The 10 first Hits must be first (order not required for others)
+BEGIN_ROBOT 4
+(firefox/)([0-9]\.|[0-1][0]\.) 2 15387 20230201065133 0
+Apache\-HttpClient/ 2 11550 20230202021913 0
+MSIE[\x20]6 1 14264 20230201064916 0
+unknown 1 291 20230201222120 1
+END_ROBOT
+
+# Worm ID - Hits - Bandwidth - Last visit
+# The 5 first Hits must be first (order not required for others)
+BEGIN_WORMS 0
+END_WORMS
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first Hits must be first (order not required for others)
+BEGIN_EMAILSENDER 0
+END_EMAILSENDER
+
+# EMail - Hits - Bandwidth - Last visit
+# The 20 first hits must be first (order not required for others)
+BEGIN_EMAILRECEIVER 0
+END_EMAILRECEIVER
+
+# Files type - Hits - Bandwidth - Bandwidth without compression - Bandwidth after compression
+BEGIN_FILETYPES 8
+css 4 625474 0 0
+png 14 5394294 0 0
+php 16 71764 0 0
+js 4 2387086 0 0
+jpg 4 53422 0 0
+jpeg 2 12082 0 0
+Unknown 10 29035 0 0
+svg 2 10021 0 0
+END_FILETYPES
+
+# Downloads - Hits - Bandwidth
+BEGIN_DOWNLOADS 0
+END_DOWNLOADS
+
+# OS ID - Hits
+BEGIN_OS ID - Hits - Pages 5
+macosx15 4 4
+win10 1 1
+android 44 14
+linux 6 6
+win7 1 1
+END_OS
+
+# Browser ID - Hits - Pages
+BEGIN_BROWSER 6
+chrome102.0.5005.125 23 8
+chrome94.0.4606.61 1 1
+chrome109.0.0.0 21 6
+chrome107.0.0.0 4 4
+chrome83.0.4103.97 6 6
+chrome4.0.221.7 1 1
+END_BROWSER
+
+# Screen size - Hits
+BEGIN_SCREENSIZE 0
+END_SCREENSIZE
+
+# Unknown referer OS - Last visit date
+BEGIN_UNKNOWNREFERER 0
+END_UNKNOWNREFERER
+
+# Unknown referer Browser - Last visit date
+BEGIN_UNKNOWNREFERERBROWSER 0
+END_UNKNOWNREFERERBROWSER
+
+# Origin - Pages - Hits 
+BEGIN_ORIGIN 6
+From0 18 18
+From1 0 0
+From2 0 0
+From3 0 0
+From4 8 38
+From5 0 0
+END_ORIGIN
+
+# Search engine referers ID - Pages - Hits
+BEGIN_SEREFERRALS 0
+END_SEREFERRALS
+
+# External page referers - Pages - Hits
+# The 10 first Pages must be first (order not required for others)
+BEGIN_PAGEREFS 0
+END_PAGEREFS
+
+# Search keyphrases - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_SEARCHWORDS 0
+END_SEARCHWORDS
+
+# Search keywords - Number of search
+# The 10 first number of search must be first (order not required for others)
+BEGIN_KEYWORDS 0
+END_KEYWORDS
+
+# Errors - Hits - Bandwidth
+BEGIN_ERRORS 2
+301 8 7638
+404 6 32474
+END_ERRORS
+
+# URL with 403 errors - Hits - Last URL referrer
+BEGIN_SIDER_403 0
+END_SIDER_403
+
+# URL with 400 errors - Hits - Last URL referrer
+BEGIN_SIDER_400 0
+END_SIDER_400
+
+# URL with 404 errors - Hits - Last URL referrer
+BEGIN_SIDER_404 4
+/admin 2 -
+/js/mage/cookies.js 2 -
+/humans.txt 1 -
+/ads.txt 1 -
+END_SIDER_404
+
+# Host - Pages - Hits - Bandwidth - Last visit date - [Start date of last visit] - [Last page of last visit]
+# [Start date of last visit] and [Last page of last visit] are saved only if session is not finished
+# The 10 first Hits must be first (order not required for others)
+BEGIN_VISITOR 14
+114.4.220.54 8 23 2485433 20230201150615
+140.0.34.251 6 21 6043715 20230202040943
+185.195.24.62 1 1 1123 20230201064914
+191.102.170.15 1 1 1085 20230201061420
+34.209.100.91 1 1 5581 20230202002201
+176.53.223.245 1 1 5775 20230201134747
+35.90.253.143 1 1 5581 20230201001504
+34.219.126.26 1 1 5775 20230201001537
+170.254.178.56 1 1 1085 20230202021915
+18.236.123.35 1 1 5581 20230201001601
+95.164.159.136 1 1 5544 20230202021917
+18.237.182.207 1 1 5581 20230201002201
+35.92.92.28 1 1 5775 20230202002209
+52.91.169.82 1 1 5544 20230201061424
+END_VISITOR
+
+# Date - Pages - Hits - Bandwidth - Visits
+BEGIN_DAY 2
+20230201 16 31 2521478 9
+20230202 10 25 6061700 5
+END_DAY
+
+# Session range - Number of visits
+BEGIN_SESSION 2
+30s-2mn 2
+0s-30s 12
+END_SESSION
+
+# URL - Pages - Bandwidth - Entry - Exit
+# The 10 first Pages must be first (order not required for others)
+BEGIN_SIDER 8
+/ 13 64050 9 10
+/gudang 4 11234 0 0
+http://simplebang.online:80/ 2 6629 2 2
+/corp 2 5338 0 1
+/login 2 4655 2 0
+http://www.simplebang.online:80/ 1 1085 1 1
+/peta-tambang 1 3834 0 0
+/profil 1 3974 0 0
+END_SIDER
